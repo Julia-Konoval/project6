@@ -18,21 +18,23 @@
   <body>
     <div id="logo">
       <img
+        id="google"
         src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         alt="Google"
       />
-      <form>
-        <img class="search-image" src="images/loop.png" alt="loop" />
+      <div id="search">
+        <div class="search-image">
+        <img id="search-image1" src="images/loop.png" />
+      </div>
         <input
+          type="text"
           id="fakebox-input"
-          autocomplete="off"
-          tabindex="-1"
-          type="url"
-          area-hidden="true"
-          placeholder="Шукайте Google в або введіть URL-адресу"
+          placeholder="Шукайте в Google або введіть URL-адресу"
         />
-        <img class="search-image" src="images/microphone.png" alt="loop" />
-      </form>
-    </div>
+        <div class="search-image">
+        <img id="search-image2" src="images/microphone.png" />
+        </div>
+        </div>
+        <!-- <img src="images/loop.png" alt="loop" /> -->
   </body>
 </html>
