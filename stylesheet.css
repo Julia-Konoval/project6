@@ -1,12 +1,12 @@
 html {
   scroll-behavior: smooth;
-  /* background-color: white; */
 }
 * {
   box-sizing: border-box;
 }
 body {
   display: block;
+  font-family: "Roboto", sans-serif;
 }
 #logo {
   display: flex;
@@ -14,40 +14,58 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 20vh;
-  /* width: 175vh; */
 }
 #google {
-  /* margin-left: auto;
-  margin-right: auto;
-  margin: 56px 0 0; */
   height: 92px;
-  /* left: calc(50% - 272px / 2); */
   position: absolute;
   width: 275px;
 }
 #search {
+  margin: 0 auto 0 auto;
+  min-width: 410px;
+  width: var(--content-width);
   margin-top: 25vh;
+  display: flex;
+  align-items: center;
 }
 #fakebox-input {
+  padding-left: 20px;
   width: 60vh;
   height: 6vh;
-  border-radius: 25px;
-  padding-left: 30px;
+  padding-right: 30px;
+  border-left: transparent;
+  border-right: transparent;
+  border-radius: 5%;
 }
 .search-image {
-  /* margin-top: 25vh;
-  border-radius: 25px;
-  background-color: white; */
+  left: 0;
+  top: 0;
   height: 2px;
   width: 2px;
 }
 #search-image1 {
-  margin-left: 1vh;
-  height: 30px;
-  width: 30px;
+  left: 56vh;
+  height: 6vh;
+  width: 18px;
+  margin-left: 2px;
+  border: 2px black solid;
+  border-right: transparent;
+  border-radius: 25%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 2px;
 }
 #search-image2 {
-  margin-right: 6vh;
+  left: 56vh;
+  height: 6vh;
+  width: 18px;
+  margin-left: 2px;
+  border: 2px black solid;
+  border-left: transparent;
+  border-radius: 25%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 2px;
 }
 .container {
   width: 5px;
@@ -65,4 +83,9 @@ body {
   position: absolute;
   top: 100px;
   width: 24px;
+}
+
+.icons {
+  height: 20px;
+  width: 20px;
 }
