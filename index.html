@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script
+    language="JavaScript"
+    src="http://j.maxmind.com/app/geoip.JavaScript"
+  ></script>
+  <script language="JavaScript">
+    var city = geoip_city();
+    var country = geoip_country_name();
+  </script>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +24,26 @@
     />
   </head>
   <body>
+    <header>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="#" class="navigation">Gmail</a>
+          </li>
+          <li>
+            <a href="#" class="navigation">Images</a>
+          </li>
+          <li>
+            <a href="#"
+              ><img id="menu" src="images/icons8-bulleted-list-30.png"
+            /></a>
+          </li>
+          <li>
+            <button id="signIn">Sign in</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div id="logo">
       <img
         id="google"
@@ -31,6 +59,26 @@
         />
         <img class="icons" id="search-image2" src="images/microphone.png" />
       </div>
+      <div id="buttons">
+        <button class="button">Google Search</button>
+        <button class="button">I`m feeling lucky</button>
+      </div>
     </div>
+    <p class="country">Google offered in:<a href="#">Україна</a></p>
   </body>
+  <footer>
+    <div id="location">
+      Ukraine
+    </div>
+    <div>
+      <nav id="footer-navigation">
+        <ul>
+          <li>Advertising</li>
+          <li>Business</li>
+          <li>About</li>
+          <li>How search works</li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </html>
